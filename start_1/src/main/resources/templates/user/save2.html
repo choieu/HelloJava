@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>save2</title>
+<link rel="stylesheet" type="text/css" href="/user.css">
+</head>
+<body>
+<div class="login-page" ng-app="">
+
+  <div class="login-content login-content-signin" ng-show="showSignIn">
+    <div>
+      <h2>회원가입</h2>
+      <form class="wrapper-box" role="form" ng-submit="register()">
+        <input type="text"
+          ng-model="username"
+          class="form-control form-control-username"
+          placeholder="아이디를 입력해 주세요."
+          required ><br>
+        <input type="email"
+          ng-model="email"
+          class="form-control form-control-email"
+          placeholder="Email주소를 입력해주세요"
+          required ><br>
+        <input type="password"
+          ng-model="password"
+          class="form-control form-control-password"
+          placeholder="Password를 입력해주세요."
+          required ><br>
+        <!-- <div class="checkbox pull-left">
+          <label>
+            <input type="checkbox"> Remember me.
+          </label>
+        </div> -->
+        <button type="submit" class="btn btn-submit btn-default pull-right">회원가입</button>
+      </form>
+    </div>
+  </div>
+   
+</div>
+</body>
+</html>
