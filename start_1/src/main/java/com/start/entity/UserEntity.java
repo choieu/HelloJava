@@ -1,6 +1,6 @@
 package com.start.entity;
 
-import com.start.dto.UserDto;
+import com.start.dto.UserDTO;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

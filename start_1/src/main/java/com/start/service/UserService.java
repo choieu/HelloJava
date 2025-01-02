@@ -1,8 +1,9 @@
 package com.start.service;
 
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.start.dto.UserDto;
+import com.start.dto.UserDTO;
 import com.start.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -12,8 +13,6 @@ import lombok.RequiredArgsConstructor;
 public class UserService {
 
 	private UserRepository userRepository;
-	
-	public void save(UserDto userDto) {
-		
-	}
+	private PasswordEncoder passwordEncoder;
+
 }

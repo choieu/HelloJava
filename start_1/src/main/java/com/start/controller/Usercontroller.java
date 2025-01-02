@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.start.dto.UserDto;
+import com.start.dto.UserDTO;
 import com.start.service.UserService;
 
 import lombok.RequiredArgsConstructor;
@@ -26,7 +26,7 @@ public class Usercontroller {
 	}
 	
 	@PostMapping(value = "/save")
-	public String save(UserDto userDto) {
+	public String save(UserDTO userDto) {
 		  System.out.println("UserController.save");
 	      System.out.println("userDto = " + userDto);
 	      return "index"; //추후 연결
